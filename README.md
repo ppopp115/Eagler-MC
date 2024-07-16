@@ -1,6 +1,5 @@
 # Eagler-MC
-<a href="https://ppopp115.github.io/Eagler-MC/">play now</a>
-![mxhmcp-mc](https://media.discordapp.net/attachments/378764518081429506/929692379508777000/unknown.png)
+<a href="https://ppopp115.github.io/Eagler-MC/">play now(开始游戏)</a>
 # 关于Eagler-MC
 这是一个多方面集成的项目，用于网页游玩我的世界(可以加入服务器)
 # MXHMCP官网
