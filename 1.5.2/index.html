@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+//由 MXHMCP (官网:www.mxhmcp.link) - 金龙华光工作室(GLMLS)编写制作并进行游戏汉化，由于时间不充足，不能保证百分百没有BUG，如果发现了BUG或者无法运行那么加入我们的官方Q群(863450374) 进行反馈交流并获取更新，期待你的加入。
+//本HTML文件制作并发布日期:2024/7/18
+//本HTML文件适用版本和文件:
+// -MXHMCP-MC 1.5.2 (游戏版本)
+// -MXHMCP-MC 1.5.2 index.html
+// -MXHMCP-MC 1.5.2的资源包(assets.epk)[*注意:一定要是由MXHMCP发布的适用版本才能够正常的运行和获得支持*]
+//当前适用版本:2024-7-18-1.5.2-1
 <html>
 <head>
 <title>MXHMCP-MC 1.5.2</title>
@@ -10,24 +17,9 @@ if(document.location.href.startsWith("file:")) {
 alert("You're not supposed to 'open' this file in your browser. Please upload this folder to your HTTP(s) server and access it via the internet. This is not a bug, please read the documentation");
 }else {
 window.addEventListener("load", async function(){
-alert("由 MXHMCP (官网:www.mxhmcp.link) - 金龙华光工作室(GLMLS) 提供并进行汉化，由于时间不充足，不能保证百分百汉化正确，还望各位玩家理解，可以加入我们的官方Q群(863450374) 进行交流和反馈，期待你的加入。");
 const relayId = Math.floor(Math.random() * 3);
 window.eaglercraftOpts = {
 container: "game_frame", assetsURI: "assets.epk", serverWorkerURI: "worker_bootstrap.js", worldsFolder: "TEST",
-assetOverrides: {
-    // "title/no-pano-blur.flag": "",
-	"records/wait.mp3": "wait.mp3",
-	"records/mellohi.mp3": "https://stream.nightride.fm/chillsynth.m4a",
-	"records/far.mp3": "https://stream.nightride.fm/nightride.m4a",
-	"records/cat.mp3": "http://usa9.fastcast4u.com/proxy/jamz?mp=/1",
-	"records/ward.mp3": "http://fr4.1mix.co.uk:8000/192h",
-	"records/strad.mp3": "http://listen.011fm.com:8028/stream15",
-	"records/blocks.mp3": "https://www.ophanim.net:8444/s/9780",
-	"records/13.mp3": "https://s2.radio.co/s2b2b68744/listen"
-	// "sounds/gta.mp3": "https://invidious.zapashcanon.fr/latest_version?itag=251&id=YRlIl6K6S88"
-	// "records/ward.mp3": wardUrl
-	// "sounds/gta.mp3": ""
-},
 servers: [
 	{ serverName: "本地测试服务器", serverAddress: "localhost:25565", hideAddress: false }
 ],
