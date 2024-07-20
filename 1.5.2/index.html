@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MXHMCP-MC 1.5.2</title>
+<meta charset="UTF-8" />
+<script type="text/javascript" src="eagswebrtc.js"></script>
+<script type="text/javascript" src="classes.js"></script>
+<script type="text/javascript">
+if(document.location.href.startsWith("file:")) {
+alert("您不应该在浏览器中“打开”此文件。请将此文件夹上传到您的HTTP服务器，并通过互联网访问。这不是bug，请阅读文档");
+}else {
+window.addEventListener("load", async function(){
+alert("由 MXHMCP (官网:www.mxhmcp.link) - 金龙华光工作室(GLMLS) 提供并进行汉化，由于时间不充足，不能保证百分百汉化正确，还望各位玩家理解，可以加入我们的官方Q群(863450374) 进行交流和反馈，期待你的加入。");
+const relayId = Math.floor(Math.random() * 3);
+window.eaglercraftOpts = {
+container: "game_frame", assetsURI: "assets.epk", serverWorkerURI: "worker_bootstrap.js", worldsFolder: "TEST",
+assetOverrides: {
+    // "title/no-pano-blur.flag": "",
+	"records/wait.mp3": "wait.mp3",
+	"records/mellohi.mp3": "https://stream.nightride.fm/chillsynth.m4a",
+	"records/far.mp3": "https://stream.nightride.fm/nightride.m4a",
+	"records/cat.mp3": "http://usa9.fastcast4u.com/proxy/jamz?mp=/1",
+	"records/ward.mp3": "http://fr4.1mix.co.uk:8000/192h",
+	"records/strad.mp3": "http://listen.011fm.com:8028/stream15",
+	"records/blocks.mp3": "https://www.ophanim.net:8444/s/9780",
+	"records/13.mp3": "https://s2.radio.co/s2b2b68744/listen"
+	// "sounds/gta.mp3": "https://invidious.zapashcanon.fr/latest_version?itag=251&id=YRlIl6K6S88"
+	// "records/ward.mp3": wardUrl
+	// "sounds/gta.mp3": ""
+},
+servers: [
+	{ serverName: "本地测试服务器", serverAddress: "localhost:25565", hideAddress: false }
+],
+relays: [
+	{ addr: "wss://relay.deev.is/", name: "lax1dude relay #1", primary: relayId == 0 },
+	{ addr: "wss://relay.lax1dude.net/", name: "lax1dude relay #2", primary: relayId == 1 },
+	{ addr: "wss://relay.shhnowisnottheti.me/", name: "ayunami relay #1", primary: relayId == 2 }
+],
+mainMenu: { splashes: [
+"Darviglet!", "官网:www.mxhmcp.link", "金龙华光工作室(GLMLS) 提供并进行汉化!", "Welcome!", "我的世界 1.5.2",
+"欢迎游玩MXHMCP-MC 1.5.2!", "加入我们的官方Q群(863450374)!", "MXHMCP-MC资源包版本:2024-7-18-1.5.2", ":>", "|>", "2024!"
+], eaglerLogo: false }};
+(function(){
+var q = window.location.search;
+if(typeof q === 'string' && q.startsWith("?")) {
+	q = new URLSearchParams(q);
+	var s = q.get("server");
+	if(s) window.eaglercraftOpts.joinServer = s;
+}
+})();
+main();
+});}
+</script>
+</head>
+<body style="margin:0px;width:100vw;height:100vh;" id="game_frame">
+</body>
+</html>
