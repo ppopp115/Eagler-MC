@@ -1,2 +1,3 @@
 《0.0.2》
-【BUG】〖https://github.com/ppopp115/Eagler-MC/raw/main/MC/MC.apk〗
+【BUG】
+〖https://github.com/ppopp115/Eagler-MC/raw/main/MC/MC.apk〗
